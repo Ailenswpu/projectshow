@@ -19,5 +19,7 @@ module Projectshow
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = "zh-CN"
+
+    config.secret_key_base = '9007903966f6fa9907f491b205283913e16d7436526e08000d308419f7f56dc30d881f957c53cbde4da6ae7ba6b8d9f8dcd6aa89d370d6aa8776ced77eff2d85'
   end
 end

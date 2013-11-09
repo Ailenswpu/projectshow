@@ -4,7 +4,8 @@ source 'http://ruby.taobao.org'
 gem 'rails', '4.0.0'
 
 gem 'rails_admin'
-gem "twitter-bootstrap-rails"
+gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
+                              :github => 'anjlab/bootstrap-rails'
 gem 'mysql2'
 gem 'carrierwave'
 gem 'thin'

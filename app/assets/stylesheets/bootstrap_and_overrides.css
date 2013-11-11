@@ -5,3 +5,87 @@
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
   */
+
+ body,html{
+ 	font-size: 14px !important;
+ 	height: 100%;
+ 	width: 100%;
+ 	background: none;
+ }
+.alpha{
+	background: url("icon/white-alpha.png") !important;
+}
+ .background-base{
+ 	height: 100%;
+ 	width: 100%;
+ 	position: fixed;
+ 	top: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	right: 0;
+ 	z-index: -1;
+ }
+ .background-img{
+ 	height: 100%;
+ 	width: 100%;
+ }
+ a.link:hover{
+  	color: #069 !important;
+  	background: none !important;
+  	text-decoration: underline;
+  }
+
+a.link{
+	color: #06A !important;
+}
+
+a.btn{
+	color: #eee !important;
+}
+
+a.btn:hover{
+	color: #FFF !important;
+}
+
+.item img{
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.table-word td{
+	word-wrap:break-word !important;
+}
+
+.table-over{
+	max-width: 100%;
+}
+
+.module{
+	background: #FFFFFF;
+}
+
+.well{
+	background: url("icon/white-alpha.png" %>);
+}
+
+.accordion-inner{
+	background: none;
+	height: auto !important;
+}
+
+a.brand:hover{
+	background: none !important;
+}
+
+.right-nav li a{
+	background: #DDD;
+}
+
+.right-nav li a:hover{
+	background: #DDD;
+	color: #666;
+}
+
+.table-over tr:hover{
+	background: url("icon/white-alpha.png") !important;
+}

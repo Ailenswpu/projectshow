@@ -1,9 +1,36 @@
-<p id="notice"><%= notice %></p>
+<div class="span12">
+  <div class="page-title">
+<h3>“本科教学质量工程”项目展示平台</h3>
+</div>
+</div>
 
-<p>
-  <strong>Name:</strong>
-  <%= @project.name %>
-</p>
 
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<div class="container-fluid content-over">
+  <div class="row-fluid">
+    <div class="span12">
+
+      <div class="row-fluid">
+        <div class="span2">
+          <%= render "layouts/projects_nav" %>
+        </div>
+        <div class="span8 well alpha">
+  			<%= render "projects/show_content" %>
+        </div>
+        <div class="span2">
+        	<ul class="nav nav-stacked nav-pills right-nav">
+				<li class="active">
+					<a href="#">首页</a>
+				</li>
+				<li>
+					<a href="#">资料</a>
+				</li>
+			</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

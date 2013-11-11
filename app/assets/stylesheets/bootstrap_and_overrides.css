@@ -89,3 +89,11 @@ a.brand:hover{
 .table-over tr:hover{
 	background: url("icon/white-alpha.png") !important;
 }
+
+.nav-list li a:hover{
+	color: #666 !important;
+}
+
+.nav-header{
+	color: #069 !important;
+}

@@ -1,0 +1,18 @@
+<table class="table table-hover .table-bordered">
+	<thead>
+		<tr>
+			<th>文件</th>
+			<th>上传时间</th>
+			<th>下载</th>
+		</tr>
+	</thead>
+  <tbody>
+    <% @attachments.each do |attachment| %>
+      <tr>
+		  <td><a href="<%=attachment.file.url%>"><%=File.basename attachment.file.url%></a></td>
+		  <td><%= attachment.created_at.strftime("%Y-%m-%d")%></td>
+		  <td><a href="<%=attachment.file.url%>" class="btn btn-success">点击下载</a></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

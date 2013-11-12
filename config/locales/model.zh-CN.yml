@@ -7,6 +7,9 @@ zh-CN:
         project:
           one: '项目管理'
           other: '项目管理'
+        attachment:
+          one: '文件管理'
+          other: '文件管理'
      attributes:
         user:
            email: '邮箱:'
@@ -28,3 +31,5 @@ zh-CN:
            achievement: '成果展示'
            created_at: '创建时间'
            updated_at: '最后更新时间'
+        attachemnt:
+           file: '上传文件'

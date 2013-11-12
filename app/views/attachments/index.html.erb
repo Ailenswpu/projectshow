@@ -1,27 +1,29 @@
-<h1>Listing attachments</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<div class="container-fluid content-over">
+  <div class="row-fluid">
+    <div class="span12">
 
-  <tbody>
-    <% @attachments.each do |attachment| %>
-      <tr>
-        <td><%= attachment.user_id %></td>
-        <td><%= link_to 'Show', attachment %></td>
-        <td><%= link_to 'Edit', edit_attachment_path(attachment) %></td>
-        <td><%= link_to 'Destroy', attachment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <div class="row-fluid" id="container">
+        <div class="span2">
+          <%= render "projects/index_nav" %>
+        </div>
+        <div class="span10 well alpha">
+  			<div class="span12">
+			<h3>
+			管理文件下载
+			</h3>
+			<%= render "filelist"%>
+		</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<br>
 
-<%= link_to 'New Attachment', new_attachment_path %>
+<script type="text/javascript">
+	$("#show_nav").pin({
+      containerSelector: "#container"
+	});
+</script>
+

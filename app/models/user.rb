@@ -7,11 +7,11 @@ class User < ActiveRecord::Base
          
          
   
-  #rails_admin的配置
-  # rails_admin do
-#     label_plural '用户管理'
-#     visible do
-#       bindings[:controller].current_admin.email.to_s == Setting.getYaml["admin_email"].to_s
-#     end
-#   end
+  rails_admin do
+    #visible false
+    label_plural '管理员管理'
+    visible do
+      bindings[:controller].current_user.email.to_s == Setting.getYaml["admin_email"].to_s
+    end
+  end
 end

@@ -5,7 +5,7 @@
    encoding: utf8
    pool: 10
    username: root
-   password: txz809603
+   password: root
    host: localhost
    port: 3306
  

@@ -1,45 +1,13 @@
-
-<div class="span12">
-  <div class="page-title">
-<h3>“本科教学质量工程”项目展示平台</h3>
-</div>
-</div>
-
 <div class="container-fluid content-over">
   <div class="row-fluid">
     <div class="span12">
 
-      <div class="row-fluid">
+      <div class="row-fluid" id="container">
         <div class="span2">
-          <%= render "layouts/projects_nav" %>
+          <%= render "projects/show_nav" %>
         </div>
-        <div class="span10 well alpha">
-          <table class="table table-hover table-over">
-  <thead>
-    <tr>
-      <th>项目名称</th>
-      <th>所在院系</th>
-      <th>负责人</th>
-      <th>带队老师</th>
-      <th>操作</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @projects.each do |project| %>
-      <tr>
-        <td><%= project.name %></td>
-        <td>fdafdsa</td>
-        <td>fdsaf</td>
-        <td>fsda</td>
-        <td><%= link_to '查看详情', project ,:class => "link" %>
-        <%= link_to '编辑', edit_project_path(project) ,:class => "link"%>
-      <%= link_to '删除', project, method: :delete, data: { confirm: 'Are you sure?' } ,:class => "link"%></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-        
+        <div class="span10">
+        <%= render "projects/projects_list" %>
         </div>
       </div>
     </div>
@@ -47,4 +15,9 @@
 </div>
 
 
+<script type="text/javascript">
+  $("#show_nav").pin({
+      containerSelector: "#container"
+  });
+</script>
 

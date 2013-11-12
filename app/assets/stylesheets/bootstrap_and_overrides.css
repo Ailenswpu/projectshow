@@ -97,3 +97,17 @@ a.brand:hover{
 .nav-header{
 	color: #069 !important;
 }
+
+.radius{
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+.btn-default{
+	color: #999 !important;
+}
+
+.btn-default:hover{
+	color: #666 !important;
+}

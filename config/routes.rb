@@ -1,4 +1,5 @@
 Projectshow::Application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   resources :attachments
 
   resources :projects

@@ -11,7 +11,7 @@
  
 # development config
  development:
-   database: projectshow_development
+   database: testpro
    <<: *common
  
 # test config

@@ -6,8 +6,9 @@
 			<div class="caption">
 				<h3>
 					<%=link_to project.name,"/projects/#{project.id}",:class=>"link" %></h3>
-				<p>
-					<%= project.description %></p>
+				<p style="word-wrap: break-word;font-size:14px;">
+					<%= project.description %>
+				</p>
 			</div>
 		</div>
 	</li>

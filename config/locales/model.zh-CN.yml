@@ -2,26 +2,11 @@ zh-CN:
   activerecord:
      models: 
         user: 
-          one: "用户" 
-          other: "用户"
-        topic:
-          one: '帖子'
-          other: '帖子'
-        role: 
-          one: '角色'
-          other: '角色'
-        reply: 
-          one: '回复'
-          other: '回复'
-        node: 
-          one: '班级'
-          other: '班级'
-        group:
-          one: '年级'
-          other: '年级'
-        admin_user: 
-          one: '系统管理员'
-          other: '系统管理员'
+          one: "用户管理" 
+          other: "用户管理"
+        project:
+          one: '项目管理'
+          other: '项目管理'
      attributes:
         user:
            email: '邮箱:'
@@ -33,20 +18,13 @@ zh-CN:
            updated_at: '更新时间'
            role: '角色'
            lock: '账户被锁状态'
-        topic:
-           title: '标题'
-           user: '发帖人'
-           node: '所属班级'
-           content: '帖子内容'
-           total_reader: '阅读次数'
-           total_liker: '收藏人数'
-           allow_reply: '允许回复'
-           suggested_at: '置顶时间'
-           suggested_day: '置顶天数'
-        role:
+        project:
            id: '编号'
-           name: '角色名称'
+           name: '项目名称'
+           declaration: '申报书'
+           assignment_book: '任务书'
+           phase_check: '阶段检查'
+           experience: '经验交流'
+           achievement: '成果展示'
            created_at: '创建时间'
-           updated_at: '更新时间'
-        node:
-           suggested_num: '允许置顶数量'
+           updated_at: '最后更新时间'

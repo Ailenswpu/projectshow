@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131108105645) do
+ActiveRecord::Schema.define(version: 20131112014647) do
 
   create_table "attachments", force: true do |t|
     t.integer  "user_id"
@@ -23,6 +23,11 @@ ActiveRecord::Schema.define(version: 20131108105645) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "declaration"
+    t.text     "assignment_book"
+    t.text     "phase_check"
+    t.text     "experience"
+    t.text     "achievement"
   end
 
   create_table "rails_admin_histories", force: true do |t|

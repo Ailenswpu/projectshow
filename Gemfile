@@ -8,6 +8,7 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 gem 'mysql2'
 gem 'carrierwave'
 gem 'thin'
+gem 'ckeditor'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

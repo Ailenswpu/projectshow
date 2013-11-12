@@ -1,5 +1,5 @@
 <div class="devise-box alpha radius">
-<h3>欢迎登录</h3>
+<h3 style="text-align:center;font-weight:300;">欢迎登录</h3>
 <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
   <%= f.email_field :email, :autofocus => true ,:class=>"input-block" ,:placeholder=>"请输入用户名"%>
   <%= f.password_field :password ,:class=>"input-block" ,:placeholder=>"请输入密码"%>

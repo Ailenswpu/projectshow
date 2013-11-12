@@ -1,13 +1,21 @@
+
+
+
 <div class="container-fluid content-over">
   <div class="row-fluid">
     <div class="span12">
 
       <div class="row-fluid" id="container">
         <div class="span2">
-          <%= render "projects/show_nav" %>
+          <%= render "projects/index_nav" %>
         </div>
         <div class="span10 well alpha">
-  			<%= render "projects/show_content" %>
+  			<div class="span12">
+			<h3>
+			计算机科学学院简介
+			</h3>
+			<%= render "home/scs_content" %>
+		</div>
         </div>
       </div>
     </div>
@@ -19,16 +27,5 @@
 	$("#show_nav").pin({
       containerSelector: "#container"
 	});
-
-  $("a.nav_button").click(function(event) {
-    /* Act on the event */
-    var id = $(this).attr("id");
-    $("div.module").fadeOut("fast");
-    $("div#"+id).fadeIn();
-  });
-  $("a#all").click(function(event) {
-    /* Act on the event */
-    $("div.module").fadeIn();
-  });
 </script>
 

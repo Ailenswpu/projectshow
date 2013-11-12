@@ -1,38 +1,28 @@
 <div class="alpha show_nav" id="show_nav">
 <ul class="nav nav-list left-nav-over" >
-				<li class="nav-header">
-					站内链接
-				</li>
-				<li>
-					<a href="/home/index">首页</a>
-				</li>
-				<li>
-					<a href="/home/about">关于“本科教学工程”</a>
-				</li>
-				<li>
-					<a href="/home/about_csc">计科院简介</a>
-				</li>
-				<li>
-					<a href="/projects">项目列表</a>
-				</li>
+			<%= render "projects/left_nav" %>
 
 				<li class="nav-header">
 					项目快捷跳转
 				</li>
+
 				<li>
-					<a href="#declaration">申请书</a>
+					<a href="#declaration" id="declaration" class="nav_button">申请书</a>
 				</li>
 				<li>
-					<a href="#assignment_book">任务书</a>
+					<a href="#assignment_book" id="assignment_book" class="nav_button">任务书</a>
 				</li>
 				<li>
-					<a href="#phase_check">阶段检查</a>
+					<a href="#phase_check" id="phase_check" class="nav_button">阶段检查</a>
 				</li>
 				<li>
-					<a href="#experience">经验交流</a>
+					<a href="#experience" id="experience" class="nav_button">经验交流</a>
 				</li>
 				<li>
-					<a href="#achievement">附件</a>
+					<a href="#achievement" id="achievement" class="nav_button">成果展示</a>
+				</li>
+				<li>
+					<a  id="all" class="nav_button">显示所有</a>
 				</li>
 				<li class="divider">
 				</li>

@@ -1,11 +1,26 @@
 <h2><%=raw  @project.name %></h2>
-<legend id="declaration">申报书</legend>
+
+<div class="module" id="declaration">
+<legend >申报书</legend>
 <p><%=raw @project.declaration %></p>
-<legend id="assignment_book">任务书</legend>
+</div>
+
+<div class="module" id="assignment_book">
+<legend >任务书</legend>
 <p><%=raw @project.assignment_book %></p>
-<legend id="phase_check">阶段检查</legend>
+</div>
+
+<div class="module" id="phase_check">
+<legend >阶段检查</legend>
 <p><%=raw @project.phase_check %></p>
-<legend id="experience">经验交流</legend>
+</div>
+
+<div class="module" id="experience">
+<legend >经验交流</legend>
 <p><%=raw @project.experience %></p>
-<legend id="achievement">附件</legend>
+</div>
+
+<div class="module" id="achievement">
+<legend >成果展示</legend>
 <p><%=raw @project.achievement %></p>
+</div>

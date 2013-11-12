@@ -95,7 +95,7 @@
 	position: fixed;
 	top:50%;
 	left: 50%;
-	margin-top: -120px;
+	margin-top: -140px;
 	margin-left: -150px;
 	width: 260px;
 	padding-left: 20px;
@@ -110,4 +110,8 @@
 .left-nav-over li{
 	font-size: 16px !important;
 	line-height: 30px;
+}
+
+.module{
+	background: none !important;
 }

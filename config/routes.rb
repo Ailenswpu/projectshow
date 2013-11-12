@@ -7,7 +7,7 @@ Projectshow::Application.routes.draw do
 
   get "home/index"
   get "home/about"
-  get "home/about_csc"
+  get "home/about_scs"
   devise_for :users
   
   

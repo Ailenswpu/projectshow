@@ -7,6 +7,7 @@ gem 'rails_admin'
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'mysql2'
 gem 'carrierwave'
+gem "mini_magick"
 gem 'thin'
 gem 'ckeditor'
 

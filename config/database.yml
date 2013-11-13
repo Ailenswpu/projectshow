@@ -8,17 +8,17 @@
    password: txz809603
    host: localhost
    port: 3306
- 
+
 # development config
  development:
-   database: projectshow_development
+   database: testpro
    <<: *common
- 
+
 # test config
  test:
    database: projectshow_test
    <<: *common
-   
+
 #production config    
  production:
    <<: *common

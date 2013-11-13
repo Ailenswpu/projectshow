@@ -31,5 +31,6 @@ zh-CN:
            achievement: '成果展示'
            created_at: '创建时间'
            updated_at: '最后更新时间'
+           description: '项目简介'
         attachemnt:
            file: '上传文件'

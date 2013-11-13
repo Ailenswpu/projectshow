@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projectshow</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="background-base">
+<img alt="" src="<%= image_url 'desk/swpuscs1.jpg' %>
+			" class="background-img" />
+</div>
+				<%= yield %>
+</body>
+</html>

@@ -5,7 +5,9 @@
 				<li class="nav-header">
 					项目快捷跳转
 				</li>
-
+				<li>
+					<a href="#description" id="description" class="nav_button">项目简介</a>
+				</li>
 				<li>
 					<a href="#declaration" id="declaration" class="nav_button">申请书</a>
 				</li>
@@ -21,16 +23,13 @@
 				<li>
 					<a href="#achievement" id="achievement" class="nav_button">成果展示</a>
 				</li>
+				<% if @project.video? %>
 				<li>
 					<a href="#video" id="video" class="nav_button">视频展示</a>
 				</li>
+				<% end %>
 				<li>
 					<a  id="all" class="nav_button">显示所有</a>
-				</li>
-				<li class="divider">
-				</li>
-				<li>
-					<a href="/admin">管理入口</a>
-				</li>
+				</li>				
 			</ul>
 </div>

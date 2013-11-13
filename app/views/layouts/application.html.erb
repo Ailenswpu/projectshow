@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Projectshow</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
+	<title>Projectshow</title>
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" =>
+	true %>
+	<%= javascript_include_tag "application", "data-turbolinks-track" =>
+	true %>
+	<%= csrf_meta_tags %></head>
 <body>
-<div class="background-base">
-<img alt="" src="<%= image_url 'desk/swpuscs1.jpg' %>
-			" class="background-img" />
-</div>
+	<div class="background-base">
+		<img alt="" src="<%= image_url 'desk/swpuscs1.jpg' %>" class="background-img" /></div>
 
+	<div class="span12">
+		<h2 style="color:#fefefe;padding-bottom:8px;padding-top:7px;">计算机科学学院"本科教学质量工程"</h2>
+	</div>
 
-<%= yield %>
-
+	<%= yield %>
 </body>
 </html>

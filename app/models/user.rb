@@ -17,6 +17,10 @@ class User < ActiveRecord::Base
      end
    end
    
+   def admin?
+     self.email.to_s  == Setting.getYaml["admin_email"].to_s
+   end
+   
   rails_admin do
     #visible false
     label_plural '管理员管理'

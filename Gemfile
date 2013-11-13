@@ -10,6 +10,7 @@ gem 'carrierwave'
 gem "mini_magick"
 gem 'thin'
 gem 'ckeditor'
+gem "cancan"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

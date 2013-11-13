@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131112134208) do
+ActiveRecord::Schema.define(version: 20131113083442) do
 
   create_table "attachments", force: true do |t|
     t.integer  "user_id"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 20131112134208) do
     t.text     "experience"
     t.text     "achievement"
     t.text     "description"
+    t.string   "video"
   end
 
   create_table "rails_admin_histories", force: true do |t|

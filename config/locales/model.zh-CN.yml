@@ -32,5 +32,6 @@ zh-CN:
            created_at: '创建时间'
            updated_at: '最后更新时间'
            description: '项目简介'
+           video: '项目视频'
         attachemnt:
            file: '上传文件'

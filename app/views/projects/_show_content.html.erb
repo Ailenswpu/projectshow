@@ -24,3 +24,10 @@
 <legend >成果展示</legend>
 <p><%=raw @project.achievement %></p>
 </div>
+
+<div class="module" id="video">
+<legend >项目视频</legend>
+<video width="100%" height="100%"  src="<%= @project.video.url%>" controls="controls">
+您的浏览器不支持 video 标签。
+</video>
+</div>

@@ -5,13 +5,13 @@
    encoding: utf8
    pool: 10
    username: root
-   password: root
+   password: txz809603
    host: localhost
    port: 3306
 
 # development config
  development:
-   database: projectshow_development
+   database: testpro
    <<: *common
 
 # test config

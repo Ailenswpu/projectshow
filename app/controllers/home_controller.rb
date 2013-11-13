@@ -2,9 +2,13 @@
 class HomeController < ApplicationController
   def index
   	@projects = Project.all
-  	render layout: "home"
   end
 
   def about
+  	
+  end
+
+  def about_scs
+  	
   end
 end

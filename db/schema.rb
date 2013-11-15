@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 20131115033215) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "file"
-    t.integer  "project_id"
   end
 
   create_table "ckeditor_assets", force: true do |t|

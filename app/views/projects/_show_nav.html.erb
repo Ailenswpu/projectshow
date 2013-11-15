@@ -1,9 +1,8 @@
-<div class="alpha show_nav" id="show_nav">
+<div class="alpha show_nav " id="show_nav">
 <ul class="nav nav-list left-nav-over" >
-			<%= render "projects/left_nav" %>
 
 				<li class="nav-header">
-					项目快捷跳转
+					项目导航
 				</li>
 				<li>
 					<a href="#description" id="description" class="nav_button">项目简介</a>
@@ -23,6 +22,9 @@
 				<li>
 					<a href="#achievement" id="achievement" class="nav_button">成果展示</a>
 				</li>
+				<li>
+				<a href="#projectsfile" id="projectsfile" class="nav_button">项目附件</a>
+				</li>
 				<% if @project.video? %>
 				<li>
 					<a href="#video" id="video" class="nav_button">视频展示</a>
@@ -30,6 +32,9 @@
 				<% end %>
 				<li>
 					<a style="cursor: pointer;" id="all" class="nav_button">显示所有</a>
-				</li>				
+				</li>
+				<li style="border-top:#EEE 1px dashed;">
+				<a href="/projects">返回列表</a>
+				</li>			
 			</ul>
 </div>

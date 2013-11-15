@@ -1,0 +1,26 @@
+
+
+
+<object id="WebOffice" height="768" width="100%" 
+style="LEFT: 0px; TOP: 0px" classid="clsid:E77E049B-23FC-4DB8-B756-60529A35FAD5" codebase="WebOffice1.ocx#version=6,0,4,0">
+<param name="_ExtentX" value="6350">
+<param name="_ExtentY" value="6350">
+</object>
+
+
+
+<SCRIPT language="javascript" event="NotifyCtrlReady" for="WebOffice" >
+/****************************************************
+*
+*	在装载完Weboffice(执行<object>...</object>)
+*	控件后执行 "WebOffice1_NotifyCtrlReady"方法
+*
+****************************************************/
+WebOffice1_NotifyCtrlReady();
+</SCRIPT>
+
+<script type="text/javascript">
+function WebOffice1_NotifyCtrlReady() {
+document.all.WebOffice1.LoadOriginalFile("<%=@attachment.file.url %>", "doc");
+}
+</script>

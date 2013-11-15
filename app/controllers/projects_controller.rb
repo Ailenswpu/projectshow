@@ -6,6 +6,10 @@ class ProjectsController < ApplicationController
   def index
     @projects = Project.all
   end
+  
+  def attachment
+    @projects = Project.where("file is NOT NULL")
+  end
 
   # GET /projects/1
   # GET /projects/1.json

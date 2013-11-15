@@ -3,7 +3,12 @@ Projectshow::Application.routes.draw do
   mount Ckeditor::Engine => '/ckeditor'
   resources :attachments
 
-  resources :projects
+  resources :projects do
+    collection do
+      get 'attachment'
+    end
+  end
+  
 
   get "home/index"
   get "home/about"

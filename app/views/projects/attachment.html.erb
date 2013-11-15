@@ -1,0 +1,28 @@
+
+<div class="container-fluid content-over">
+  <div class="row-fluid">
+    <div class="span12">
+
+      <div class="row-fluid" id="container">
+        <div class="span2">
+          <%= render "projects/index_nav" %>
+        </div>
+        <div class="span10 well alpha">
+  			<div class="span12">
+			<h3>
+			管理文件下载
+			</h3>
+			<%= render "filelist"%>
+		</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+	$("#show_nav").pin({
+      containerSelector: "#container"
+	});
+</script>

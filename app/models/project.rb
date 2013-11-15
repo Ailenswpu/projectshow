@@ -4,6 +4,7 @@ class Project < ActiveRecord::Base
     
   belongs_to :user
   mount_uploader :video, FileUploader
+  mount_uploader :file, FileUploader
     
   rails_admin do        
     field :id
@@ -15,6 +16,7 @@ class Project < ActiveRecord::Base
     field :experience, :ck_editor
     field :achievement, :ck_editor
     field :video, :carrierwave
+    field :file, :carrierwave
     field :user_id, :enum do
       enum do
         User.all.map{ |user| [user.email,user.id]}

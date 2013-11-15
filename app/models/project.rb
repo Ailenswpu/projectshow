@@ -1,6 +1,7 @@
 # encoding : utf-8
 class Project < ActiveRecord::Base
   validates :description, :length => { :maximum => 200 }
+  validates :user_id, presence: true
     
   belongs_to :user
   mount_uploader :video, FileUploader
@@ -16,8 +17,11 @@ class Project < ActiveRecord::Base
     field :experience, :ck_editor
     field :achievement, :ck_editor
     field :video, :carrierwave
-    field :file, :carrierwave
+    field :attachment, :ck_editor do
+      label '项目附件'
+    end
     field :user_id, :enum do
+      label '项目团队email'
       enum do
         User.all.map{ |user| [user.email,user.id]}
       end

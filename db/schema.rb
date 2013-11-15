@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131115043448) do
+ActiveRecord::Schema.define(version: 20131115050413) do
 
   create_table "attachments", force: true do |t|
     t.integer  "user_id"
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 20131115043448) do
     t.string   "video"
     t.integer  "user_id"
     t.string   "file"
+    t.text     "attachment"
   end
 
   create_table "rails_admin_histories", force: true do |t|

@@ -33,7 +33,7 @@ zh-CN:
            updated_at: '最后更新时间'
            description: '项目简介'
            video: '项目视频'
-           file: '项目附件'
+           attachment: '项目附件'
         attachemnt:
            title: '附件标题'
            content: '附件内容'

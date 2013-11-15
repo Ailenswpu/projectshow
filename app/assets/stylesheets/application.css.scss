@@ -133,3 +133,22 @@
 .file_link:hover{
 	text-decoration: none !important;
 }
+
+.projects_list_title{
+	height:30px;
+	font-size:18px;
+	word-break:keep-all;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.projects_list_brief{
+	height: 75px;
+	line-height: 25px;
+	word-wrap:break-word; 
+	white-space:normal;
+	//white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}

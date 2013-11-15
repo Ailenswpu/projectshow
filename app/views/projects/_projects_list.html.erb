@@ -4,9 +4,9 @@
 	<li class="span4 radius alpha">
 		<div class="thumbnail">
 			<div class="caption">
-				<h3 style="white-space:normal; word-break:break-all;overflow:hidden;">
+				<h3 class="projects_list_title">
 					<%=link_to project.name,"/projects/#{project.id}",:class=>"link" %></h3>
-				<p style="word-wrap: break-word;font-size:14px;">
+				<p class="projects_list_brief">
 					<%= project.description %>
 				</p>
 			</div>

@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 20131115050413) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "file"
-    t.integer  "project_id"
     t.string   "title"
     t.text     "content"
   end

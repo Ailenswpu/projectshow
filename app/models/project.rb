@@ -8,7 +8,6 @@ class Project < ActiveRecord::Base
   mount_uploader :file, FileUploader
     
   rails_admin do        
-    field :id
     field :name
     field :description, :text
     field :declaration, :ck_editor

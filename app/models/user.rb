@@ -24,6 +24,11 @@ class User < ActiveRecord::Base
   rails_admin do
     #visible false
     label_plural '管理员管理'
+    field :email
+    field :password
+    field :password_confirmation do
+      label '确认密码'
+    end
     visible do
       bindings[:controller].current_user.email.to_s == Setting.getYaml["admin_email"].to_s
     end

@@ -8,8 +8,8 @@ zh-CN:
           one: '项目管理'
           other: '项目管理'
         attachment:
-          one: '文件管理'
-          other: '文件管理'
+          one: '附件管理'
+          other: '附件管理'
      attributes:
         user:
            email: '邮箱:'
@@ -35,4 +35,5 @@ zh-CN:
            video: '项目视频'
            file: '项目附件'
         attachemnt:
-           file: '上传文件'
+           title: '附件标题'
+           content: '附件内容'

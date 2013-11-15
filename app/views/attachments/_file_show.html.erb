@@ -1,0 +1,15 @@
+
+<OBJECT id=WebOffice1 style="LEFT: 0px; TOP: 0px; WIDTH: 100%; HEIGHT: 500px" 
+codebase="WebOffice.ocx#Version=3,0,0,0"
+classid="clsid:E77E049B-23FC-4DB8-B756-60529A35FAD5"></OBJECT>
+
+<script LANGUAGE=javascript>
+<!--
+// 初始化控件
+function WebOffice1_NotifyCtrlReady() {
+	document.all.WebOffice1.LoadOriginalFile(basePath + '/${param.fileUrl}','${param.fileType}')};
+function playOffice(path){
+        var fileType = path.substring(path.lastIndexOf(".")+1);
+		window.open("../../playOffice.jsp?fileUrl="+ <%=@attachment.file.url %> + "&fileType="+fileType)
+}
+</script>

@@ -1,9 +1,23 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid content-over">
+  <div class="row-fluid">
+    <div class="span12">
 
-<p>
-  <strong>User:</strong>
-  <%= @attachment.user_id %>
-</p>
+      <div class="row-fluid" id="container">
+        <div class="span2">
+          <%= render "projects/index_nav" %>
+        </div>
+        <div class="span10 well alpha">
+        <%= render "attachments/file_show" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<%= link_to 'Edit', edit_attachment_path(@attachment) %> |
-<%= link_to 'Back', attachments_path %>
+
+<script type="text/javascript">
+  $("#show_nav").pin({
+      containerSelector: "#container"
+  });
+</script>
+

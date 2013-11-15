@@ -118,5 +118,16 @@
 
 .module{
 	background: none !important;
+	display: none;
+
 }
 
+
+.file_link{
+	font-size: 16px;
+}
+
+
+.file_link:hover{
+	text-decoration: none !important;
+}

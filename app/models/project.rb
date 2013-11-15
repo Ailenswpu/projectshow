@@ -1,6 +1,6 @@
 # encoding : utf-8
 class Project < ActiveRecord::Base
-  validates :description, :length => { :maximum => 120 }
+  validates :description, :length => { :maximum => 200 }
     
   belongs_to :user
   mount_uploader :video, FileUploader

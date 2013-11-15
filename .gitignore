@@ -1,25 +1,35 @@
-*.rbc
-*.sassc
-.sass-cache
-capybara-*.html
-.rspec
-.rvmrc
-/.bundle
-/vendor/bundle
-/log/*
-/tmp/*
-/db/*.sqlite3
-/public/system/*
-/coverage/
-/spec/tmp/*
-**.orig
-rerun.txt
-pickle-email-*.html
-.project
-config/initializers/secret_token.rb
+#Ingore config 
 /config/database.yml
+/config/environments/production.rb
+/config/initializers/session_store.rb
+/config/initializers/config.rb
+/config/settings.yml
 
-/public/uploads
-
+#Ingore db
+/db/development.sqlite3
 /db/schema.rb
 
+#Ingore log
+/log/*.log
+/log
+/log/identifying_code/*.jpg
+
+#Ingore public
+/public/plugin_assets
+/public/system/users/*
+/public/uploads/*
+
+#Ingore other
+/tmp/cache/*
+/vendor/*
+/test/*
+/script/log/*
+
+#Ingore the root_path
+*.rdoc
+.project
+
+/Gemfile.lock
+dump.rdb
+tmp/pids/server.pid
+/scm/*

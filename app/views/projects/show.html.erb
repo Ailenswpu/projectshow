@@ -14,11 +14,10 @@
   </div>
 </div>
 
-
 <script type="text/javascript">
-	$("#show_nav").pin({
-      containerSelector: "#container"
-	});
+ 
+  $("div.module").fadeOut("fast");
+  $("div#description").fadeIn();
 
   $("a.nav_button").click(function(event) {
     /* Act on the event */
@@ -31,4 +30,7 @@
     $("div.module").fadeIn();
   });
 </script>
+
+
+
 

@@ -1,40 +1,37 @@
 <div class="alpha show_nav " id="show_nav">
-<ul class="nav nav-list left-nav-over" >
-
-				<li class="nav-header">
-					项目导航
-				</li>
-				<li>
-					<a href="#description" id="description" class="nav_button">项目简介</a>
-				</li>
-				<li>
-					<a href="#declaration" id="declaration" class="nav_button">申请书</a>
-				</li>
-				<li>
-					<a href="#assignment_book" id="assignment_book" class="nav_button">任务书</a>
-				</li>
-				<li>
-					<a href="#phase_check" id="phase_check" class="nav_button">阶段检查</a>
-				</li>
-				<li>
-					<a href="#experience" id="experience" class="nav_button">经验交流</a>
-				</li>
-				<li>
-					<a href="#achievement" id="achievement" class="nav_button">成果展示</a>
-				</li>
-				<li>
-				<a href="#projectsfile" id="projectsfile" class="nav_button">项目附件</a>
-				</li>
-				<% if @project.video? %>
-				<li>
-					<a href="#video" id="video" class="nav_button">视频展示</a>
-				</li>
-				<% end %>
-				<li>
-					<a style="cursor: pointer;" id="all" class="nav_button">显示所有</a>
-				</li>
-				<li>
-				<a href="/projects">返回列表</a>
-				</li>			
-			</ul>
+	<ul class="nav nav-list left-nav-over" >
+		<li class="nav-header">项目导航</li>
+		<li>
+			<a id="description" class="nav_button">项目简介</a>
+		</li>
+		<li>
+			<a id="declaration" class="nav_button">申请书</a>
+		</li>
+		<li>
+			<a  id="assignment_book" class="nav_button">任务书</a>
+		</li>
+		<li>
+			<a id="phase_check" class="nav_button">阶段检查</a>
+		</li>
+		<li>
+			<a  id="experience" class="nav_button">经验交流</a>
+		</li>
+		<li>
+			<a id="achievement" class="nav_button">成果展示</a>
+		</li>
+		<li>
+			<a  id="projectsfile" class="nav_button">项目附件</a>
+		</li>
+		<% if @project.video? %>
+		<li>
+			<a  id="video" class="nav_button">视频展示</a>
+		</li>
+		<% end %>
+		<li>
+			<a  id="all" class="nav_button">显示所有</a>
+		</li>
+		<li>
+			<a href="/projects">返回列表</a>
+		</li>
+	</ul>
 </div>

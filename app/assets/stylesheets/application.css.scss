@@ -13,6 +13,7 @@
  */
 .nav-over li a:hover{
 	color: #666;
+
 }
 
 .content-over{
@@ -114,11 +115,12 @@
 
 .left-nav-over li a{
 	color: #333 !important;
+	cursor: pointer;
 }
 
 .module{
 	background: none !important;
-	display: none;
+	display: block;
 
 }
 
